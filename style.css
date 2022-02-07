@@ -1,0 +1,182 @@
+/* color properties and background */
+  /* #first {
+  color: lightcoral;
+  background-color: brown;
+  }
+
+  #second {
+    color:rgb(114, 14, 34);
+    background: indianred;
+  } */
+
+/* color names */
+/* RGB 0-255 */
+  /* #first {
+  color: rgb(255,0,0);
+  background-color: rgb(0,0,0);
+  }
+
+  #second {
+  color:rgb(0,255,0);
+  background: rgb(255,255,255);
+  }
+
+  #third{
+  color: rgb(0,0,255);
+  background: rgb(100,100,100);
+  }
+
+  body {
+  background-color: rgb(100,34,210);
+  } */
+
+/* RBGA 0-1 opacity/transparency */
+  /* #first {
+  color: rgb(100, 123, 56);
+  background: rgba(0, 0, 0, 0.15);
+  }
+
+  #second {
+  color: rgb(45, 10, 34);
+  background: rgba(0, 0, 0, 0.25);
+  }
+
+  #third {
+  color: rgb(255, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  }
+
+  #fourth {
+  color: rgb(0, 0, 255);
+  background: rgba(0, 0, 0, 1);
+  }
+
+  body {
+  background: rgba(10, 10, 200, 0.6);
+  } */
+
+
+/* hex values #RRGGBB */
+  /* #first {
+  color: #44FFD2;
+  background: #DAF5FF;
+  }
+
+  #second {
+  color: #FFBFA0;
+  background: #87F6FF;
+  }
+
+  #third {
+  color: #44FFD2;
+  background: #DAF5FF;
+  }
+
+  #fourth {
+  color: #FFBFA0;
+  background: #87F6FF;
+  }
+
+  body {
+  background: #616163;
+  } */
+
+
+
+/* font-size, width, height, pixels */
+  /* absolute value */
+    /* h3 {
+    font-size: 60px;
+    width: 200px;
+    height: 300px;
+    background: #df472a;
+    } */
+  
+    /* relative value */
+    /* percentages are according to the parent element */
+      /* .outer {
+      width: 500px;
+      height: 500px;
+      background: #579457;
+      }
+
+      .inner {
+      width: 50%;
+      height: 50%;
+      background: #f5755b;
+      } */
+
+    /* em values */
+    /* 1em = 16px = default value */
+    /* em values are according to the parent element */
+      /* div {
+      font-size: 20px;
+      }
+
+      .relative {
+      font-size: 2em;
+      }
+
+      .absolute {
+      font-size: 32px;
+      } */
+
+    /* rem values */
+    /* 1rem = 16px = default value */
+    /* rem values are according to root (which here is html) */
+      /* html {
+      font-size: 32px;
+      }
+
+      div {
+      font-size: 20px;
+      }
+
+      .relative {
+      font-size: 1.5rem;
+      }
+
+      .absolute {
+      font-size: 32px;
+      } */
+
+    /* vh = height percentage of the screen */
+    /* vw = width percentage of the screen */
+      /* .banner {
+      width: 50vw;
+      height: 50vh;
+      background: #fa876a;
+      }
+
+      .header {
+      width: 100vw;
+      height: 100vh;
+      background: #a34bf6;
+      } */
+
+    /* default browser styles and google dev tools */
+    /* default tools can be seen when you right click on a webpage, hit inspect, and hover over elements */
+      /* h2 {
+      color: red;
+      font-size: 60px;
+      } */
+
+
+
+/* calc() = perform math operations = mix & match values */
+  * {
+  margin: 0;
+  }
+
+  .navbar {
+  background-color: blue;
+  height: 100px;
+  color: white;
+  font-size: 3rem;
+  }
+
+  /* 100vh-100px === the whole page - the navbar, so they BOTH fit on the whole page */
+  .banner1 {
+  background: red;
+  min-height: calc(100vh - 100px);
+  }
